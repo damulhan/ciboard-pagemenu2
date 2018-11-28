@@ -6,6 +6,11 @@ Pagemenu2는 CIBoard의 기본 관리자 메뉴 기능을 확장한 메뉴 편�
 
 기존 메뉴보다 좀 더 편리한 인터페이스를 메뉴를 편집할 수 있도록 했습니다. 
 
+### 주요 기능 
+
+- 다단 메뉴 
+- 마우스로 순서를 자유스럽게 변환가능 
+- 화면 변경없이 서버에 반영 
 
 ### Screenshot
 
@@ -14,3 +19,6 @@ Pagemenu2는 CIBoard의 기본 관리자 메뉴 기능을 확장한 메뉴 편�
 ### 관련 링크 
 * CIBoard github: https://github.com/theciboard/ciboard3-pro 
 * CIBoard homepage: http://www.ciboard.co.kr
+* Nestable jQuery Plugin: http://dbushell.com/
+* Backbone.js: http://backbonejs.org
+
