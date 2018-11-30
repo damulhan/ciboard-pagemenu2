@@ -1,14 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-/**
- * Pagemenu class
- *
- * Copyright (c) CIBoard <www.ciboard.co.kr>
- *
- * @author CIBoard (develop@ciboard.co.kr)
- */
- 
 /*
  * Pagemenu2 for CIBoard - Smilena (https://github.com/damulhan)  
  * @author Smilena <damulhan@gmail.com>
@@ -48,37 +40,24 @@ class Pagemenu2 extends CB_Controller
 	{
 		parent::__construct();
 
-		/**
-		 * 라이브러리를 로딩합니다
-		 */
 		$this->load->library(array('querystring'));
 
-		/**
-		 * Validation 라이브러리를 가져옵니다
-		 */
 		$this->load->library('form_validation');
 		
 	}
 
-	/**
-	 * 목록을 가져오는 메소드입니다
-	 */
 	public function index()
 	{
-		// 이벤트 라이브러리를 로딩합니다
+
 		$eventname = 'event_admin_page_pagemenu2_index';
 		$this->load->event($eventname);
-
+		
 		$view = array();
 		$view['view'] = array();
 
 		// 이벤트가 존재하면 실행합니다
 		$view['view']['event']['before'] = Events::trigger('before', $eventname);
 
-
-		/**
-		 * 페이지에 숫자가 아닌 문자가 입력되거나 1보다 작은 숫자가 입력되면 에러 페이지를 보여줍니다.
-		 */
 		$param =& $this->querystring;
 
 		/**
