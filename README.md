@@ -14,6 +14,8 @@ Pagemenu2는 CIBoard의 기본 관리자 메뉴 기능을 확장한 메뉴 편�
 
 <img src="./screenshot.png" width="" height=""></img> 
 
+<img src="./screenshot2.gif" width="" height=""></img> 
+
 ### 관련 링크 
 * CIBoard github: https://github.com/theciboard/ciboard3-pro 
 * CIBoard homepage: http://www.ciboard.co.kr
