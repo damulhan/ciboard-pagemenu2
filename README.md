@@ -12,9 +12,13 @@ Pagemenu2는 CIBoard의 기본 관리자 메뉴 기능을 확장한 메뉴 편�
 
 ### Screenshot
 
-<img src="./screenshot.png" width="" height=""></img> 
-
 <img src="./screenshot2.gif" width="" height=""></img> 
+
+### 설치방법
+
+1. 다운로드 받은 파일을 압축을 해제합니다.
+2. 압축해제된 폴더 및 파일을 씨아이보드의 해당하는 위치에 복사해줍니다. 
+3. application/config/admin_menu_100.php 은 관리자페이지에 보이는 메뉴에 관한 설정입니다. 참고하여 적절히 편집해줍니다. 
 
 ### 관련 링크 
 * CIBoard github: https://github.com/theciboard/ciboard3-pro 
