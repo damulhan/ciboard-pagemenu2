@@ -119,9 +119,9 @@ function menu_load() {
 		method: 'get',
 		url: "/admin/page/pagemenu2/getmenus_json",
 		data: data,
-		success: function(data) {
+		success: function(result) {
 			
-			var json = JSON.parse(data);
+			var json = JSON.parse(result);
 						
 			if(json['result'] !== 'success') {
 				alert('Error: ' + json['mesg']);

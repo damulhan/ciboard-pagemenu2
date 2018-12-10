@@ -128,6 +128,8 @@ var editMenuItem = function () {
 		return;
 	}
 	
+	console.log(target);
+	
 	target.data("name", newName);
 	target.data("link", newLink);
 	target.data("target", newTarget);
@@ -138,11 +140,9 @@ var editMenuItem = function () {
 	// check as updated 
 	target.data("updated", "1"); 
 	
-	window.t = target;
-	
 	target.find("> .dd-handle > .name").html(newName);
-	target.find(".icon-desktop").css('display', (newDesktop == "1") ? 'inline-block' : 'none');
-	target.find(".icon-mobile").css('display', (newMobile == "1") ? 'inline-block' : 'none');
+	target.find("> .dd-handle .icon-desktop").css('display', (newDesktop == "1") ? 'inline-block' : 'none');
+	target.find("> .dd-handle .icon-mobile").css('display', (newMobile == "1") ? 'inline-block' : 'none');
 	
 	netstableUpdateJSONOutput();
 	
