@@ -20,6 +20,10 @@ Pagemenu2는 CIBoard의 기본 관리자 메뉴 기능을 확장한 메뉴 편�
 2. 압축해제된 폴더 및 파일을 씨아이보드의 해당하는 위치에 복사해줍니다. 
 3. application/config/admin_menu_100.php 은 관리자페이지에 보이는 메뉴에 관한 설정입니다. 참고하여 적절히 편집해줍니다. 
 
+### 메뉴 제작시 참고 소스 
+* CIBoard - 3 Level menu Example
+https://gist.github.com/damulhan/91ae16d0e56621e85835392bfc9df95a
+
 ### 관련 링크 
 * CIBoard github: https://github.com/theciboard/ciboard3-pro 
 * CIBoard homepage: http://www.ciboard.co.kr
