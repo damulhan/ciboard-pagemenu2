@@ -42,18 +42,18 @@ var MenusView = Backbone.View.extend({
 	
 	el: $("#menus"),
 	
-	initialize: function(col) {        
+	initialize: function(col) {
 		this.collection = col;
 	},
 	
-    template: _.template($("#menu-tmpl").html()),
+	template: _.template($("#menu-tmpl").html()),
 	
 	renderItem: function(menu) {
 		return this.template({
-            "menu": menu, 
-            "templateFn": this.template
-        });
-    }, 
+			"menu": menu,
+			"templateFn": this.template
+		});
+	}, 
 	
 	render: function() {
 		var that = this;
@@ -61,7 +61,7 @@ var MenusView = Backbone.View.extend({
 		_.each(this.collection.toJSON(), function(menu) {
 			outs += that.renderItem(menu);
 		}, this);
-        this.$el.html(outs);
+		this.$el.html(outs);
 	},
 	
 });

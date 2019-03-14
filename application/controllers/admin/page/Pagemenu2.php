@@ -281,7 +281,7 @@ class Pagemenu2 extends CB_Controller
 			
 		} else {
 			$this->error_count += 1;
-			$this->error_mesg  += "[${men_name}]: 입력값이 잘못되었습니다. " + validation_errors() + "\n";
+			$this->error_mesg  .= "[${men_name}]: 입력값이 잘못되었습니다. " + validation_errors() + "\n";
 		}
 		
 		if($menu->children) {
